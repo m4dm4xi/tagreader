@@ -378,3 +378,34 @@ light:
   id: activity_led
   name: "${friendly_name} LED"
   restore_mode: ALWAYS_OFF
+  effects:
+   - pulse:
+   - pulse:
+       name: "Fast Pulse"
+       transition_length: 0.5s
+       update_interval: 0.5s
+   - pulse:
+       name: "Slow Pulse"
+       # transition_length: 1s      # defaults to 1s
+       update_interval: 2s
+    - random:
+       name: Random Effect With Custom Values
+       transition_length: 5s
+       update_interval: 7s
+    - strobe:
+       name: Strobe Effect With Custom Values
+       colors:
+         - state: true
+           brightness: 100%
+           red: 100%
+           green: 90%
+           blue: 0%
+           duration: 500ms
+         - state: false
+           duration: 250ms
+         - state: true
+           brightness: 100%
+           red: 0%
+           green: 100%
+           blue: 0%
+           duration: 500ms
