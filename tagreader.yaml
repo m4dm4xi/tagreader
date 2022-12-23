@@ -371,7 +371,7 @@ rtttl:
 light:
 - platform: neopixelbus
   variant: WS2812
-  pin: D8
+  pin: D7
   num_leds: 1
   flash_transition_length: 500ms
   type: GRB
