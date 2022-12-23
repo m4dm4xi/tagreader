@@ -379,12 +379,12 @@ light:
   name: "${friendly_name} LED"
   restore_mode: ALWAYS_OFF
   effects:
-   - pulse:
-   - pulse:
+    - pulse:
+    - pulse:
        name: "Fast Pulse"
        transition_length: 0.5s
        update_interval: 0.5s
-   - pulse:
+    - pulse:
        name: "Slow Pulse"
        # transition_length: 1s      # defaults to 1s
        update_interval: 2s
